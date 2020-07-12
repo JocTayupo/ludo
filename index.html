@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ludo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+</head>
+    <body onload="main()">
+        <div class="container">
+            <div class="extremo">
+                <div class="columna_casa casa_roja">
+                    <div class="interior">
+                        <div class="blanco">
+                            <div class="fila_fichas">
+                                <div class="ficha casa_roja" id='f-1' style="cursor: pointer;"></div>
+                                <div class="ficha casa_roja"></div>
+                            </div>
+                            <div class="fila_dado" id="dado-1">
+                                <div class="dado dado-1" id="dado"></div>
+                            </div>
+                            <div class="fila_fichas">
+                               <div class="ficha casa_roja"></div>
+                               <div class="ficha casa_roja"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columna_llegada">
+                    <div class="columna_casillas">
+                        <div class="casilla" id='C-11'></div>
+                        <div class="casilla comodin" id='C-10'></div>
+                        <div class="casilla" id='C-9'></div>
+                        <div class="casilla" id='C-8'></div>
+                        <div class="casilla" id='C-7'></div>
+                        <div class="casilla" id='C-6'></div>
+                    </div>
+                    <div class="columna_casillas">
+                        <div class="casilla" id='C-12'></div>
+                        <div class="casilla casa_verde" id='C-13-VE'></div>
+                        <div class="casilla casa_verde" id='C-14-VE'></div>
+                        <div class="casilla casa_verde" id='C-15-VE'></div>
+                        <div class="casilla casa_verde" id='C-16-VE'></div>
+                        <div class="casilla casa_verde" id='C-17-VE'></div>
+                    </div>
+                    <div class="columna_casillas">
+                        <div class="casilla" id='C-13'></div>
+                        <div class="casilla salida_verde" id='C-14'></div>
+                        <div class="casilla" id='C-15'>
+                        </div>
+                        <div class="casilla" id='C-16'></div>
+                        <div class="casilla" id='C-17'></div>
+                        <div class="casilla" id='C-18'></div>
+                    </div>
+                </div>
+                <div class="columna_casa casa_verde border_left">
+                    <div class="interior">
+                         <div class="blanco">
+                            <div class="fila_fichas" >
+                                <div class="ficha casa_verde" id='f-5' style="cursor:pointer"></div>
+                                <div class="ficha casa_verde"></div>
+                            </div>
+                            <div class="fila_dado" id="dado-2"></div>
+                            <div class="fila_fichas">
+                               <div class="ficha casa_verde"></div>
+                               <div class="ficha casa_verde"></div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="centro">
+                <div class="columna_llegada">
+                    <div class="fila_casillas">
+                        <div class="casilla" id='C-52'></div>
+                        <div class="casilla salida_roja" id='C-1'></div>
+                        <div class="casilla" id='C-2'></div>
+                        <div class="casilla" id='C-3'></div>
+                        <div class="casilla" id='C-4'></div>
+                        <div class="casilla" id='C-5'></div>
+                    </div>
+                    <div class="fila_casillas">
+                        <div class="casilla" id='C-51'></div>
+                        <div class="casilla casa_roja" id='C-52-RO'></div>
+                        <div class="casilla casa_roja" id='C-53-RO'></div>
+                        <div class="casilla casa_roja" id='C-54-RO'></div>
+                        <div class="casilla casa_roja" id='C-55-RO'></div>
+                        <div class="casilla casa_roja" id='C-56-RO'></div>
+                    </div>
+                    <div class="fila_casillas">
+                        <div class="casilla" id='C-50'></div>
+                        <div class="casilla comodin" id='C-49'></div>
+                        <div class="casilla" id='C-48'></div>
+                        <div class="casilla" id='C-47'></div>
+                        <div class="casilla" id='C-46'></div>
+                        <div class="casilla" id='C-45'></div>
+                    </div>
+                </div>
+                <div class="columna_meta"></div>
+                <div class="columna_llegada">
+                    <div class="fila_casillas">
+                        <div class="casilla" id='C-19'></div>
+                        <div class="casilla" id='C-20'></div>
+                        <div class="casilla" id='C-21'></div>
+                        <div class="casilla" id='C-22'></div>
+                        <div class="casilla comodin" id='C-23'></div>
+                        <div class="casilla" id='C-24'></div>
+                    </div>
+                    <div class="fila_casillas">
+                        <div class="casilla casa_amarilla" id='C-30-AM'></div>
+                        <div class="casilla casa_amarilla" id='C-29-AM'></div>
+                        <div class="casilla casa_amarilla" id='C-28-AM'></div>
+                        <div class="casilla casa_amarilla" id='C-27-AM'></div>
+                        <div class="casilla casa_amarilla" id='C-26-AM'></div>
+                        <div class="casilla" id='C-25'></div>
+                    </div>
+                    <div class="fila_casillas">
+                        <div class="casilla" id='C-31'></div>
+                        <div class="casilla" id='C-30'></div>
+                        <div class="casilla" id='C-29'></div>
+                        <div class="casilla" id='C-28'></div>
+                        <div class="casilla salida_amarilla" id='C-27'></div>
+                        <div class="casilla" id='C-26'></div>
+                    </div>
+                </div>
+            </div>
+            <div class="extremo">
+                <div class="columna_casa casa_azul">
+                    <div class="interior">
+                         <div class="blanco">
+                            <div class="fila_fichas">
+                                <div class="ficha casa_azul" id="f-13" style="cursor:pointer"></div>
+                                <div class="ficha casa_azul"></div>
+                            </div>
+                            <div class="fila_dado" id="dado-4"></div>
+                            <div class="fila_fichas">
+                               <div class="ficha casa_azul"></div>
+                               <div class="ficha casa_azul"></div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="columna_llegada">
+                    <div class="columna_casillas">
+                        <div class="casilla" id='C-44'></div>
+                        <div class="casilla" id='C-43'></div>
+                        <div class="casilla" id='C-42'></div>
+                        <div class="casilla" id='C-41'></div>
+                        <div class="casilla salida_azul" id='C-40'></div>
+                        <div class="casilla" id='C-39'></div>
+                    </div>
+                    <div class="columna_casillas">
+                        <div class="casilla casa_azul" id='C-43-AZ'></div>
+                        <div class="casilla casa_azul" id='C-42-AZ'></div>
+                        <div class="casilla casa_azul" id='C-41-AZ'></div>
+                        <div class="casilla casa_azul" id='C-40-AZ'></div>
+                        <div class="casilla casa_azul" id='C-39-AZ'></div>
+                        <div class="casilla" id='C-38'></div>
+                    </div>
+                    <div class="columna_casillas">
+                        <div class="casilla" id='C-32'></div>
+                        <div class="casilla" id='C-33'></div>
+                        <div class="casilla" id='C-34'></div>
+                        <div class="casilla" id='C-35'></div>
+                        <div class="casilla comodin" id='C-36'></div>
+                        <div class="casilla" id='C-37'></div>
+                    </div>
+                </div>
+                <div class="columna_casa casa_amarilla border_top border_left">
+                    <div class="interior">
+                         <div class="blanco">
+                             <div class="fila_fichas">
+                                 <div class="ficha casa_amarilla" id='f-9' style="cursor:pointer;"></div>
+                                 <div class="ficha casa_amarilla"></div>
+                             </div>
+                             <div class="fila_dado" id="dado-3"></div>
+                             <div class="fila_fichas">
+                                <div class="ficha casa_amarilla"></div>
+                                <div class="ficha casa_amarilla"></div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
+

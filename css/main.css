@@ -1,0 +1,343 @@
+
+
+body{
+    margin-top: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #337fd7;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin : auto;
+    width: 90vw;
+    max-width: 700px;
+    max-height: 700px;
+    height: 82vh;
+    -webkit-box-shadow: -1px 3px 28px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 28px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 28px -1px rgba(0,0,0,0.75);
+    background-color: #FFFFFF;
+
+}
+.container .extremo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+}
+
+.container .extremo .columna_casa{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.container .extremo .columna_casa .interior{
+    position: relative;
+    width: 85%;
+    height: 85%;
+    border: solid 3px #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .extremo .columna_casa .interior .blanco{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+   /* border-radius: 1rem;*/
+    background-color: #FFFFFF;
+}
+
+.container .extremo .columna_casa .interior .blanco .fila_fichas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.container .extremo .columna_casa .interior .blanco .fila_dado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.container .extremo .columna_casa .interior .blanco .fila_fichas .ficha{
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px #000000;
+}
+
+.container .extremo .columna_llegada{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 100%;
+}
+.container .extremo .columna_llegada .columna_casillas{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 33.2%;
+    height: 100%;
+}
+
+.container .extremo .columna_llegada .columna_casillas .casilla{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 16.4%;
+    border-top: solid 1px #000000;
+    border-left: solid 1px #000000;
+    border-right: solid 1px #000000;
+}
+
+.container .extremo .columna_llegada .columna_casillas .casilla .ficha{
+    width: 27px;
+    height: 27px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px #000000;
+
+}
+.container .centro{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+}
+
+.container .centro .columna_llegada{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+
+.container .centro .columna_llegada .fila_casillas{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 33.2%;
+}
+
+.container .centro .columna_llegada .fila_casillas .casilla{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 16.4%;
+    height: 100%;
+    border-top: solid 1px #000000;
+    border-left: solid 1px #000000;
+    border-right: solid 1px #000000;
+}
+.container .centro .columna_llegada .fila_casillas .casilla .ficha{
+    width: 27px;
+    height: 27px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px #000000;
+}
+.container .centro .columna_meta{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background:url('casa.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    width: 20%;
+    height: 100%;
+}
+
+.salida_roja{
+    background:url('estrellaRoja.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+
+.salida_azul{
+    background:url('estrellaAzul.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+
+.salida_verde{
+    background:url('estrellaVerde.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+
+.salida_amarilla{
+    background:url('estrellaAmarilla.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+
+.comodin{
+    background:url('estrellaGris.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+.dado{
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+}
+.dado_animado{
+    -webkit-animation-name: lanzar_dado;
+    -webkit-animation-duration: 0.4s;
+}
+.dado-1{
+    background:url('1.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+.dado-2{
+    background:url('2.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+.dado-3{
+    background:url('3.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+.dado-4{
+    background:url('4.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+.dado-5{
+    background:url('5.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+.dado-6{
+    background:url('6.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+
+@-webkit-keyframes lanzar_dado {
+     0%{
+         transform: rotate(0deg);
+         background:url('5.svg');
+         background-repeat: no-repeat;
+         background-position: top;
+         background-size: 100% 100%;
+      }
+      25%{
+        transform: rotate(45deg);
+        background:url('2.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+      }
+      50%{
+        transform: rotate(90deg);
+        background:url('4.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+      }
+      75%{
+        transform: rotate(135deg);
+        background:url('1.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+      }
+      100%{
+        transform: rotate(180deg);
+        background:url('6.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+      }
+}
+
+
+.casa_roja{
+    background-color: #ef1a24;
+}
+.RO{
+    background-color: #AC0C14;
+}
+
+.VE{
+    background-color: #003D1E;
+}
+
+.AM{
+    background-color:#E0BF00;
+}
+
+.AZ{
+    background-color: #6885DF;
+}
+
+.casa_verde{
+    background-color: #00a24d;
+}
+
+.casa_azul{
+    background-color: #21409a;
+}
+
+.casa_amarilla{
+    background-color: #ffde1e;
+}
+
+.border_top{
+    border-top: solid 1px #000000;
+}
+
+.border_left{
+    border-left: solid 1px #000000;
+}
